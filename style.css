@@ -7,19 +7,19 @@
 
 body{
 
-    background:linear-gradient(#48CAE4,#0096C7,#023E8A);
-    min-height:100vh;
-    color:white;
+    background:linear-gradient(
+    to bottom,
+    #87CEEB 0%,
+    #5CC8FF 35%,
+    #00AEEF 55%,
+    #00BCD4 70%,
+    #F8D49D 100%);
+
+    height:100vh;
+    overflow:hidden;
 }
 
-/* Navbar */
-
-header{
-
-    width:100%;
-    padding:20px 10%;
-
-}
+/* เมนู */
 
 nav{
 
@@ -27,40 +27,45 @@ nav{
     justify-content:space-between;
     align-items:center;
 
+    padding:20px 50px;
+
+    background:rgba(255,255,255,.3);
+
+    backdrop-filter:blur(8px);
+
 }
 
-.logo{
+nav h2{
 
-    font-size:30px;
-    font-weight:bold;
+color:white;
 
 }
 
 nav ul{
 
-    display:flex;
-    list-style:none;
+display:flex;
+list-style:none;
 
 }
 
-nav ul li{
+nav li{
 
-    margin-left:30px;
-
-}
-
-nav ul li a{
-
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-    transition:.3s;
+margin-left:25px;
 
 }
 
-nav ul li a:hover{
+nav a{
 
-    color:#90E0EF;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#FFD166;
 
 }
 
@@ -68,138 +73,129 @@ nav ul li a:hover{
 
 .hero{
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    height:75vh;
+text-align:center;
+
+margin-top:100px;
+
+color:white;
 
 }
 
-.content{
+.hero h1{
 
-    width:70%;
+font-size:55px;
 
-}
+margin-bottom:20px;
 
-.content h1{
-
-    font-size:60px;
-    margin-bottom:20px;
+text-shadow:2px 2px 5px black;
 
 }
 
-.content h2{
+.hero h2{
 
-    font-size:30px;
-    margin-bottom:20px;
-    font-weight:400;
+font-size:32px;
+
+margin-bottom:20px;
 
 }
 
-.content p{
+.hero p{
 
-    font-size:20px;
-    line-height:35px;
+font-size:20px;
+
+width:700px;
+
+margin:auto;
+
+line-height:35px;
 
 }
 
 .btn{
 
-    display:inline-block;
-    margin-top:40px;
-    padding:15px 40px;
-    background:white;
-    color:#0077B6;
-    text-decoration:none;
-    border-radius:50px;
-    font-size:20px;
-    transition:.3s;
+display:inline-block;
+
+margin-top:40px;
+
+padding:15px 45px;
+
+background:#FFD166;
+
+color:#005577;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-size:20px;
+
+font-weight:bold;
+
+transition:.3s;
 
 }
 
 .btn:hover{
 
-    background:#90E0EF;
-    transform:scale(1.05);
+background:white;
+
+transform:scale(1.1);
 
 }
 
-/* Wave */
+/* คลื่น */
 
 .wave{
 
-    position:absolute;
-    bottom:0;
-    width:100%;
+position:absolute;
+
+bottom:0;
+
+left:0;
+
+width:200%;
+
+height:180px;
+
+background:
+radial-gradient(circle at 25px 25px,#ffffff 25px,transparent 26px);
+
+background-size:100px 80px;
+
+animation:wave 8s linear infinite;
+
+opacity:.9;
 
 }
 
-.wave svg{
+@keyframes wave{
 
-    display:block;
+from{
+
+transform:translateX(0);
 
 }
 
-/* Footer */
+to{
+
+transform:translateX(-100px);
+
+}
+
+}
 
 footer{
 
-    position:absolute;
-    bottom:10px;
-    width:100%;
-    text-align:center;
-    color:#023E8A;
-    font-weight:bold;
+position:absolute;
 
-}
+bottom:15px;
 
-/* Responsive */
+width:100%;
 
-@media(max-width:768px){
-
-nav{
-
-flex-direction:column;
-
-}
-
-nav ul{
-
-margin-top:20px;
-flex-direction:column;
 text-align:center;
 
-}
+font-weight:bold;
 
-nav ul li{
-
-margin:10px 0;
-
-}
-
-.content{
-
-width:90%;
-
-}
-
-.content h1{
-
-font-size:40px;
-
-}
-
-.content h2{
-
-font-size:24px;
-
-}
-
-.content p{
-
-font-size:18px;
-
-}
+color:#005577;
 
 }
