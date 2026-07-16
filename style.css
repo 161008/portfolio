@@ -116,3 +116,75 @@ footer{
     font-weight:bold;
 
 }
+/* ---------- Under Sea Theme ---------- */
+
+body.undersea{
+
+    background:linear-gradient(
+    to bottom,
+    #003566,
+    #00509D,
+    #0077B6,
+    #00B4D8);
+
+    min-height:100vh;
+
+}
+
+/* กล่องข้อมูล */
+
+.card{
+
+    width:700px;
+
+    margin:40px auto;
+
+    background:rgba(255,255,255,.2);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 0 30px rgba(0,0,0,.4);
+
+}
+
+.card h1{
+
+margin-bottom:25px;
+
+}
+
+.card p{
+
+font-size:20px;
+
+line-height:40px;
+
+}
+
+/* รูปโปรไฟล์ */
+
+.profile{
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:6px solid white;
+
+margin-bottom:25px;
+
+box-shadow:0 0 25px white;
+
+}
