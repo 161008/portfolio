@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Prompt',sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
@@ -10,192 +10,109 @@ body{
     background:linear-gradient(
     to bottom,
     #87CEEB 0%,
-    #5CC8FF 35%,
-    #00AEEF 55%,
-    #00BCD4 70%,
-    #F8D49D 100%);
+    #4FC3F7 40%,
+    #00BFFF 70%,
+    #F7D794 100%);
 
-    height:100vh;
-    overflow:hidden;
+    min-height:100vh;
 }
 
 /* เมนู */
 
 nav{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:20px 50px;
-
     background:rgba(255,255,255,.3);
 
-    backdrop-filter:blur(8px);
+    text-align:center;
 
-}
-
-nav h2{
-
-color:white;
-
-}
-
-nav ul{
-
-display:flex;
-list-style:none;
-
-}
-
-nav li{
-
-margin-left:25px;
+    padding:18px;
 
 }
 
 nav a{
 
-text-decoration:none;
-color:white;
-font-weight:bold;
-transition:.3s;
+    color:white;
+
+    text-decoration:none;
+
+    margin:15px;
+
+    font-size:18px;
+
+    font-weight:bold;
 
 }
 
 nav a:hover{
 
-color:#FFD166;
+    color:yellow;
 
 }
 
-/* Hero */
+/* เนื้อหา */
 
 .hero{
 
-text-align:center;
+    text-align:center;
 
-margin-top:100px;
+    margin-top:50px;
 
-color:white;
-
-}
-
-.hero h1{
-
-font-size:55px;
-
-margin-bottom:20px;
-
-text-shadow:2px 2px 5px black;
+    color:white;
 
 }
 
-.hero h2{
+.profile{
 
-font-size:32px;
+    width:220px;
 
-margin-bottom:20px;
+    height:220px;
 
-}
+    object-fit:cover;
 
-.hero p{
+    border-radius:50%;
 
-font-size:20px;
+    border:6px solid white;
 
-width:700px;
-
-margin:auto;
-
-line-height:35px;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
 
 }
 
-.btn{
+h1{
 
-display:inline-block;
+    margin-top:20px;
 
-margin-top:40px;
-
-padding:15px 45px;
-
-background:#FFD166;
-
-color:#005577;
-
-text-decoration:none;
-
-border-radius:40px;
-
-font-size:20px;
-
-font-weight:bold;
-
-transition:.3s;
+    font-size:42px;
 
 }
 
-.btn:hover{
+h2{
 
-background:white;
-
-transform:scale(1.1);
+    margin-top:15px;
 
 }
 
-/* คลื่น */
+p{
 
-.wave{
+    margin-top:20px;
 
-position:absolute;
+    font-size:20px;
 
-bottom:0;
-
-left:0;
-
-width:200%;
-
-height:180px;
-
-background:
-radial-gradient(circle at 25px 25px,#ffffff 25px,transparent 26px);
-
-background-size:100px 80px;
-
-animation:wave 8s linear infinite;
-
-opacity:.9;
+    line-height:35px;
 
 }
 
-@keyframes wave{
-
-from{
-
-transform:translateX(0);
-
-}
-
-to{
-
-transform:translateX(-100px);
-
-}
-
-}
+/* ส่วนล่าง */
 
 footer{
 
-position:absolute;
+    margin-top:60px;
 
-bottom:15px;
+    text-align:center;
 
-width:100%;
+    padding:20px;
 
-text-align:center;
+    color:white;
 
-font-weight:bold;
-
-color:#005577;
+    font-weight:bold;
 
 }
